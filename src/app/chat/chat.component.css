@@ -1,0 +1,25 @@
+.chat{
+    margin: 10px;
+}
+div.chat-content{
+    height: 300px;
+    width: 400px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
+
+}
+
+.card{
+    height: 100%;
+}
+
+input{
+    margin: 10px;
+    border: 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 40px;
+}
+
+#input-user{
+width: 80px;
+}

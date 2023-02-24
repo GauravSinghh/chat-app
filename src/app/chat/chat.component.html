@@ -1,0 +1,30 @@
+<p>chat works!</p>
+
+<main class="chat">
+    <div class="container">
+        <div class="chat-content">
+            <div class="card">
+                <ul>
+                    <li *ngFor="let chatmsg of webSocketService.chatMessages">
+                        <strong>{{chatmsg.user}}:</strong>
+                        <span>{{chatmsg.message}}</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <form (ngSubmit)="sendMessage(sendForm)" #sendForm="ngForm">
+            <div>
+                <div>
+                    <input type="text"name="user" id="input-user" ngModel>
+                </div>
+                <div>
+                    <input type="text"name="message" id="input-message" placeholder="Chat Here" ngModel>
+                </div>
+                <div>
+                    <button type="submit"> Send</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</main>
